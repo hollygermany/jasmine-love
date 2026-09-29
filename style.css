@@ -624,3 +624,344 @@ footer {
   .replies-section { padding-left: 1.2rem; padding-right: 1.2rem; }
   .modal-box { padding: 1.8rem 1.4rem; }
 }
+
+/* ─── HOLLY: GUIDANCE & TUTORING ────────────────────────── */
+.holly {
+  background:
+    radial-gradient(circle at 12% 8%, rgba(240,168,192,0.22), transparent 42%),
+    radial-gradient(circle at 90% 90%, rgba(166,126,224,0.22), transparent 45%),
+    linear-gradient(180deg, var(--lilac-pale) 0%, var(--cream) 100%);
+  padding: 4.5rem 1.5rem 5rem;
+  border-top: 1px solid var(--lilac-light);
+}
+
+.holly-inner {
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.6rem;
+}
+
+.holly-head { text-align: center; }
+
+.holly-kicker {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--lilac-deep);
+  background: var(--white);
+  border: 1px solid var(--lilac-light);
+  padding: 0.35rem 1.1rem;
+  border-radius: 99px;
+  margin-bottom: 1rem;
+}
+
+.holly-head h2 {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--lilac-dark);
+  line-height: 1.15;
+  margin-bottom: 0.8rem;
+}
+
+.holly-lead {
+  max-width: 620px;
+  margin: 0 auto;
+  color: var(--text-mid);
+  font-size: 1.05rem;
+}
+
+/* free advice banner */
+.holly-free {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  background: linear-gradient(135deg, var(--lilac-deep), var(--lilac-main));
+  color: var(--white);
+  border-radius: var(--radius);
+  padding: 1.8rem 2.2rem;
+  box-shadow: var(--shadow-hover);
+  position: relative;
+  overflow: hidden;
+}
+
+.holly-free::after {
+  content: '';
+  position: absolute;
+  right: -40px; top: -40px;
+  width: 160px; height: 160px;
+  background: rgba(255,255,255,0.10);
+  border-radius: 50% 50% 50% 0;
+}
+
+.holly-free-icon {
+  font-size: 2.6rem;
+  background: rgba(255,255,255,0.18);
+  border-radius: 50%;
+  width: 72px; height: 72px;
+  flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.holly-free h3 {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 0.2rem;
+}
+
+.holly-free p { color: rgba(255,255,255,0.9); font-size: 0.98rem; position: relative; z-index: 1; }
+
+/* pricing */
+.holly-pricing {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.6rem;
+}
+
+.price-card {
+  background: var(--white);
+  border: 1px solid var(--lilac-light);
+  border-radius: var(--radius);
+  padding: 2.2rem 2rem;
+  text-align: center;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.price-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+
+.price-card-featured {
+  border: 2px solid var(--lilac-main);
+  background: linear-gradient(180deg, var(--white), var(--lilac-pale));
+}
+
+.price-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--lilac-deep);
+  background: var(--rose-soft);
+  padding: 0.25rem 0.9rem;
+  border-radius: 99px;
+  margin-bottom: 0.9rem;
+}
+
+.price-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--lilac-dark);
+}
+
+.price-amount {
+  font-family: var(--font-display);
+  font-size: 3.4rem;
+  font-weight: 300;
+  color: var(--lilac-deep);
+  line-height: 1.2;
+  margin: 0.4rem 0 0.6rem;
+}
+
+.price-amount span {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--text-soft);
+  font-weight: 400;
+}
+
+.price-card:first-child .price-amount span { font-family: var(--font-display); font-size: 2rem; font-style: italic; color: var(--lilac-deep); }
+
+.price-note { color: var(--text-mid); font-size: 0.93rem; }
+
+/* topics */
+.holly-topics-head { text-align: center; margin-bottom: -1rem; }
+
+.holly-topics-head h3 {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 300;
+  color: var(--lilac-deep);
+}
+
+.holly-topics-head p { color: var(--text-soft); font-size: 0.95rem; }
+
+.holly-topics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1.3rem;
+}
+
+.topic-card {
+  background: var(--white);
+  border: 1px solid var(--lilac-light);
+  border-radius: var(--radius);
+  padding: 1.7rem 1.4rem;
+  box-shadow: var(--shadow-soft);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.topic-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(to right, var(--lilac-mid), var(--rose-mid));
+}
+
+.topic-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+
+.topic-icon {
+  display: flex; align-items: center; justify-content: center;
+  width: 52px; height: 52px;
+  font-size: 1.6rem;
+  background: var(--lilac-pale);
+  border-radius: 50%;
+  margin-bottom: 0.9rem;
+}
+
+.topic-card h4 {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--lilac-dark);
+  margin-bottom: 0.3rem;
+}
+
+.topic-card p { font-size: 0.92rem; color: var(--text-mid); line-height: 1.6; }
+
+/* about */
+.holly-about {
+  background: var(--white);
+  border: 1px solid var(--lilac-light);
+  border-radius: var(--radius);
+  padding: 2.2rem 2.4rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.holly-about-title { display: flex; align-items: center; gap: 1.1rem; margin-bottom: 1.6rem; }
+
+.holly-avatar {
+  width: 60px; height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--lilac-main), var(--rose-mid));
+  color: var(--white);
+  font-family: var(--font-display);
+  font-size: 2rem;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+.holly-about-title h3 {
+  font-family: var(--font-display);
+  font-size: 1.9rem;
+  font-weight: 400;
+  color: var(--lilac-dark);
+  line-height: 1.2;
+}
+
+.holly-about-title p { color: var(--text-soft); font-size: 0.95rem; }
+
+.holly-timeline {
+  list-style: none;
+  position: relative;
+  padding-left: 1.6rem;
+  border-left: 2px dashed var(--lilac-mid);
+  margin-left: 0.6rem;
+}
+
+.holly-timeline li {
+  position: relative;
+  padding-bottom: 1.1rem;
+  color: var(--text-dark);
+}
+
+.holly-timeline li:last-child { padding-bottom: 0; }
+
+.holly-timeline li::before {
+  content: '';
+  position: absolute;
+  left: calc(-1.6rem - 7px);
+  top: 0.5rem;
+  width: 12px; height: 12px;
+  border-radius: 50%;
+  background: var(--lilac-main);
+  border: 2px solid var(--white);
+  box-shadow: 0 0 0 2px var(--lilac-mid);
+}
+
+.holly-timeline .age {
+  display: inline-block;
+  min-width: 72px;
+  font-weight: 700;
+  color: var(--lilac-deep);
+  margin-right: 0.4rem;
+}
+
+/* CTA */
+.holly-cta {
+  text-align: center;
+  background: linear-gradient(135deg, var(--lilac-dark), var(--lilac-deep));
+  border-radius: var(--radius);
+  padding: 2.8rem 2rem;
+  color: var(--white);
+  box-shadow: var(--shadow-hover);
+}
+
+.holly-cta h3 {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 300;
+  margin-bottom: 0.3rem;
+}
+
+.holly-cta p { color: rgba(255,255,255,0.8); }
+
+.holly-cta-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0 1rem;
+}
+
+.holly-cta .btn-primary {
+  background: var(--white);
+  color: var(--lilac-dark);
+  text-decoration: none;
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1.5px solid rgba(255,255,255,0.7);
+  color: var(--white);
+  border-radius: 99px;
+  padding: 0.85rem 2.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.btn-outline:hover { background: rgba(255,255,255,0.15); transform: translateY(-2px); }
+
+.holly-email { font-size: 0.9rem; letter-spacing: 0.03em; opacity: 0.85; }
+
+@media (max-width: 640px) {
+  .holly { padding: 3rem 1rem 3.5rem; }
+  .holly-head h2 { font-size: 2.3rem; }
+  .holly-free { flex-direction: column; text-align: center; padding: 1.6rem 1.4rem; }
+  .holly-pricing { grid-template-columns: 1fr; }
+  .holly-about { padding: 1.7rem 1.3rem; }
+  .holly-timeline .age { display: block; }
+  .holly-cta { padding: 2.2rem 1.3rem; }
+}
